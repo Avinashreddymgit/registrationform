@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+           /* background-color: aqua;*/
+            padding: 20px;
+            border:1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h1 class="head">BIODATA:</h1><BR></BR>
+        <hr>
+    <form action="post">
+        <label for="first name">first name:</label>
+        <input type="text" id="fist name">
+        <label for="second name">last name:</label>
+        <input type="text" id="second name"><br>
+        <fieldset>
+            <legend>gender</legend>
+            <label for="male">male</label>
+            <input type="radio" id="male" name="gender">
+            <label for="female">female</label>
+            <input type="radio" id="female" name="gender">
+            <label for="other">other</label>
+            <input type="radio" id="other" name="gender">
+        </fieldset><br>
+        <h2>subject of intrest:</h2>
+    <select name="subject" id="subject">
+      <option value="maths">maths</option>
+      <option value="physics">physics</option>
+      <option value="coding">coding</option>
+      <option value="other">other</option>
+    </select><br>
+    <fieldset>
+        <legend>languages known</legend>
+        <label for="english">english</label>
+        <input type="checkbox" id="english">
+        <label for="telugu">telugu</label>
+        <input type="checkbox" id="telugu">
+        <label for="hindhi">hindi</label>
+        <input type="checkbox" id="hindhi">                      
+    </fieldset><br>
+    <label for="date of birth">date of birth:</label>
+    <input type="date" id="date of birth"><br>
+    <label for="contact">contact no.</label>
+    <input type="tel" id="contact" ><br><br>
+    <label for="address">address</label>
+    <input type="text" id="address"><br><br>
+    <label for="pincode">pincode</label>
+    <input type="text" id="pincode"><br><br>
+    <label for="s">state</label>
+    <input type="text" id="s">
+    <label for="cou">country</label>
+    <input type="text" id="cou"><br><br>
+    <input type="submit" value="submit">
+     <button>reset</button>
+    </form>
+    </div>
+</body> 
+</html>
