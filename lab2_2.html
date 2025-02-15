@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .college{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .strip{
+            height: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            background-color: blue;
+        }
+        .college_header{
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+        }
+         .nav{
+            display: flex;
+            justify-content: space-around;
+            width: 60%;
+         }
+         .nav_b{
+           text-decoration: none;
+           color: black;
+           font-weight: 200;
+         }
+         .anno_box{
+            width: 100%;
+            height: 30px;
+            border: 4px solid blue;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+         }
+         .anno_content{
+            animation-name: rl;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            display: flex;
+            gap:3px;
+        }
+         @keyframes rl{
+            from {
+    translate: 100vw 0;
+                 }
+
+            to {
+    translate: 0 0;
+                }
+         }
+         .new{
+            height: 20px;
+            width: 40px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             background-color: rgb(211, 235, 76);
+             border-radius: 5px;
+         }
+         .new_content{
+          color: white;
+         }
+         .down-arrow{
+            height: 10px;
+            width: 10px;
+         }
+         .side_image{
+            width: 100%;
+            height: 200px;
+         }
+         .camplife{
+            display: grid;
+            gap: 5px;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr);
+         }
+         .camp_box{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+         }
+         .event_box{
+            border: 1px sloid black;
+            border-radius: 5px;
+            padding : 2rem;
+         }
+         .events{
+            overflow:hidden;
+         }
+         .newsandevents{
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            overflow-y: scroll;
+         }
+         .an{
+            text-decoration: none;
+            color: rgb(206, 71, 71);
+         }
+        .headingc{
+            padding-left: 2rem;
+        }
+        .n{
+            font-size: 1.2rem;
+        }
+        .w{
+            font-size: 2.4rem;
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <div class="college">
+        <div class="strip">
+            <div class="w">Welcome To NITW</div>
+        </div>
+    <div class="college_header">
+        <img src="download.jfif" alt="not found">
+        <h1>National Institute Of Technology Warangle</h1>
+    </div>
+    <div class="nav">
+        <a href="#" class="nav_b">Institute <img src="down-arrow.png" alt="arrow"class="down-arrow"></a>
+        <a href="#"class="nav_b">Administration <img src="down-arrow.png" alt="arrow"class="down-arrow"></a>
+        <a href="#"class="nav_b">Acadamics <img src="down-arrow.png" alt="arrow"class="down-arrow"></a>
+        <a href="#"class="nav_b">R&D <img src="down-arrow.png" alt="arrow"class="down-arrow"></a>
+        <a href="#"class="nav_b">Students <img src="down-arrow.png" alt="arrow"class="down-arrow"></a>
+        <a href="#"class="nav_b">Alumini <img src="down-arrow.png" alt="arrow"class="down-arrow"></a>
+    </div>
+    <div class="anno_box">
+         <div class="anno_content"><div class="new"><p class="new_content">NEW</p></div> <div>Lorem ipsum dolor sit amet.</div></div>
+    </div>
+    <div class="slide_show">
+        <div class="first_slide"><img src="firstimage.jpg" alt="image" class="slide_image"></div>
+        <div class="second_slide"><img src="secondimage.jpg" alt="image" class="slide_image"></div>
+        <div class="third_slide"><img src="thirdimage.jpg" alt="image" class="slide_image"></div>
+    </div>
+    <div class="newsandevents">
+        <p class="n">News and Events:</p>
+        <a href="#" class="an">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi quos amet doloremque! Amet ipsam nesciunt maxime hic necessitatibus quibusdam animi?</a>
+    <a href="#"class="an">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi quos amet doloremque! Amet ipsam nesciunt maxime hic necessitatibus quibusdam animi?</a>
+    <a href="#"class="an">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi quos amet doloremque! Amet ipsam nesciunt maxime hic necessitatibus quibusdam animi?</a>
+    <a href="#"class="an">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi quos amet doloremque! Amet ipsam nesciunt maxime hic necessitatibus quibusdam animi?</a>
+    <a href="#"class="an">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi quos amet doloremque! Amet ipsam nesciunt maxime hic necessitatibus quibusdam animi?</a>
+    <a href="#"class="an">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi quos amet doloremque! Amet ipsam nesciunt maxime hic necessitatibus quibusdam animi?</a>
+    <a href="#"class="an">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi quos amet doloremque! Amet ipsam nesciunt maxime hic necessitatibus quibusdam animi?</a>
+    </div>
+    <div class="camp_box">
+        <h2>Campus life images:</h2>
+    <div class="camplife">
+        <img src="c1.jpeg" alt="" class="cam_life">
+        <img src="c2.jpeg" alt="" class="cam_life">
+        <img src="c3.jpeg" alt="" class="cam_life">
+        <img src="c4.jpeg" alt="" class="cam_life">
+        <img src="c5.jpeg" alt="" class="cam_life">
+        <img src="c6.jpeg" alt="" class="cam_life">
+    </div>
+</div>
+<div class="events">
+    <div class="heading"><h1 class="headingc">Research Highlights</h1></div>
+    <div class="event_box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, at. Provident ipsum perferendis esse. Distinctio nostrum a, maiores porro quisquam ipsa magnam minus, consequuntur dolor nesciunt dolore animi? Excepturi, quas. Dicta nam iusto, est nulla labore praesentium officia eos nostrum corporis esse eaque, impedit dolores. Possimus quae labore culpa nesciunt!
+    </div>
+</div>
+    </div>
+</body>
+</html>
