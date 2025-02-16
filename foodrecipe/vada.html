@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: azure;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .headcon{
+            font-size: 3rem;
+        font-weight: bold;
+        }
+        .main{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 80%;
+            border: 1px solid rgb(51, 49, 49);
+            border-radius: 4px;
+        }
+        .box1{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 70%;
+            
+        }
+        .box2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+        }
+        .buy{
+            font-size: 1.5rem;
+        }
+        .m{
+            font-size: 2rem;
+        }
+        .footer_con{
+            font-size: 2rem;
+            color: rgb(66, 190, 76);
+            padding: 1rem;
+        }
+        .Box2{
+            width: 48%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .Box1{
+            width: 48%;
+            height: 90%;
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img{
+            width: 70%;
+            height: 70%;
+            border-radius: 5px;
+        }
+        .img:hover{
+            transform: scale(1.2);
+            transition-duration: 1.5s;
+        }
+        .mi{
+            text-align: center;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="heading">
+        <p class="headcon">Vada</p>
+    </div>
+    <div class="main">
+        <div class="Box1">
+            <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2014/07/medu-vada-recipe-500x500.jpg" alt="dosa" class="img"/>
+        </div>
+        <div class="Box2">
+        <div class="box1">
+            <p class="m">Calorie: 100cal</p>
+            <p class="m">Health benefitsa: Fast energy</p>
+            <p class="m"><P class="mi">Ingredients: vada powder,masalas,onlion,groundnut,chilly</P></p>
+            <p class="m">Price: 20 ruppes per plate</p>
+        </div>
+        <div class="box2">
+            <a href="#" class="buy">Click here to buy</a>
+        </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footer_con">Hope You visit Website again</p>
+    </div>
+   </div>
+</body>
+</html>

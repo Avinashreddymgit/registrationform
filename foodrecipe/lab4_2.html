@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .homecon{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            align-items: center;
+            background-color: aqua;
+            padding-top: 10rem;
+        }
+        .an{
+            text-decoration: none;
+            height: 30px;
+            padding-left: 6px;
+            padding-right: 3px;
+            border: 1px solid blue;
+            background-color: aliceblue;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: large;
+        }
+        .nav{
+            width: 40%;
+            height: 40px;
+            background-color: rgb(231, 211, 32);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 5px;
+        }
+        .h{
+            display: flex;
+            gap: 2rem;
+        }
+        .logo{
+            width: 8rem;
+            height: 8rem;
+            border-radius: 4rem;
+        }
+        .g{
+            padding-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="homecon">
+        <div class="h">
+            <img src="https://img.freepik.com/free-vector/hand-drawn-hea…ood-logo-design_23-2149673692.jpg?semt=ais_hybrid" alt="food" class="logo">
+        <h1 class="g">Healthy rice space</h1>
+        </div>
+        <nav class="nav">
+            <a href="http://127.0.0.1:5500/lunch.html" class="an"> breakfast</a>
+            <a href="http://127.0.0.1:5500/break.html" class="an"> lunch</a>
+            <a href="http://127.0.0.1:5500/dinner.html" class="an">dinner</a>
+        </nav>
+    </div>
+</body>
+</html>
