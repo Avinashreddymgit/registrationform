@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+     .container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #65FF00;
+     }
+     .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+     }
+     .box{
+        height: 450px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         align-items: center;
+         border: 1px solid black;
+         box-shadow: 1px 1px 1px 2px rgb(129, 125, 125);
+         border-radius: 5px;
+     }
+     .img{
+        max-width: 300px;
+        height: 300px;
+        border-radius: 5px;
+     }
+     .imgfooter{
+        text-decoration: none;
+        font-size: large;
+        font-weight: bold;
+        width: 250px;
+        text-align: center;
+     }
+     .footer{
+        text-decoration: none;
+        font-size: large;
+        font-weight: bold;
+     }
+     .imghead{
+        font-size: large;
+        font-weight: bold;
+     }
+     .heading{
+        background-color: rgb(58, 58, 236);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     .headcon{
+        font-size: 2rem;
+        font-weight: bold;
+        color: azure;
+     }
+     .img:hover{
+        transform: scale(1.1);
+        transition-duration: 2s;
+     }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="heading"><p class="headcon">BREAKFAST</p></div>
+    <div class="main">
+        <div class="box">
+            <div class="imghead">Dosa</div>
+            <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/dosa-recipe.jpg" alt="Dosa" class="img">
+            <a href="http://127.0.0.1:5500/info.html" class="imgfooter"><p class="imgfooter">Click here for additional info and to buy dish</p></a>
+        </div>
+        <div class="box">
+            <div class="imghead">Vada</div>
+            <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2014/07/medu-vada-recipe-500x500.jpg" alt="Voda" class="img">
+            <a href="http://127.0.0.1:5500/vada.html" class="imgfooter"><p class="imgfooter">Click here for additional info and to buy dish</p></a>
+        </div>
+        <div class="box">
+            <div class="imghead">Upma</div>
+            <img src="https://rakskitchen.net/wp-content/uploads/2013/02/upma-recipe-feat.jpg" alt="Upma" class="img">
+            <a href="http://127.0.0.1:5500/upma.html" class="imgfooter"><p class="imgfooter">Click here for additional info and to buy dish</p></a>
+        </div>
+    </div>
+    <div class="footer">
+        Thank you for visiting our website
+    </div>
+   </div>
+</body>
+</html>
