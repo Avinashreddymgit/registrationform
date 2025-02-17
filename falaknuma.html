@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            align-items: center;
+            background-color: #1f263b;
+        }
+        .head{
+            padding-top: 2rem;
+            font-size: 2rem;
+            color: blue;
+        }
+        .cont{
+            padding-top: 2rem;
+            width: 100vw;
+            min-height: 50%;
+            display: flex;
+            gap: 2rem;
+            justify-content: space-around;
+        }
+        .i{
+            display: block;
+            border-radius: 6px;
+            height: 100%;
+            width: 50%;
+            padding: 1rem;
+            animation-name: slide;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes slide {
+            0%{
+              translate: -8rem 0px;
+            }
+            100%{
+                translate: 0px 0px;
+            }
+        }
+        .ides{
+            padding: 1rem;
+            font-size: 1.2rem;
+            color: azure;
+        }
+        .i:hover{
+            transform: perspective(1000px) translateZ(20px);
+            transition-duration: 1s;
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="head">Falaknuma Palace</div>
+        <div class="cont">
+            <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/74/b8/d4.jpg" alt="i" class="i">
+            <div class="ides">The Palace has a library with a carved walnut roof, a replica of the one at Windsor Castle. The library had one of the finest collection of the Quran in India. The ground floor of the Palace housed the living quarters. A marble staircase leads to the upper floor. It has carved balustrades, which support marble figurines with candelabra at intervals.
+                One of the highlights of the Palace is the State Reception Room, where the ceiling is decorated with frescoes and gilded reliefs. The Ballroom contains a 2-ton manually-operated organ, said to be the only one of its kind in the world. The palace has 60 lavishly decorated rooms and 22 spacious halls. It has some of the finest collections of the Nizam’s treasures, including paintings, statues, furniture, manuscripts and books. The jade collection at the Palace is considered to be unique in the world.</div>
+        </div>
+    </div>
+</body>
+</html>

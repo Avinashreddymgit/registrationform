@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            align-items: center;
+            background-color: #1f263b;
+        }
+        .head{
+            padding-top: 2rem;
+            font-size: 2rem;
+            color: blue;
+        }
+        .cont{
+            padding-top: 2rem;
+            width: 100vw;
+            min-height: 50%;
+            display: flex;
+            gap: 2rem;
+            justify-content: space-around;
+        }
+        .i{
+            display: block;
+            border-radius: 6px;
+            height: 100%;
+            width: 50%;
+            padding: 1rem;
+            animation-name: slide;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes slide {
+            0%{
+              translate: -8rem 0px;
+            }
+            100%{
+                translate: 0px 0px;
+            }
+        }
+        .ides{
+            padding: 1rem;
+            font-size: 1.2rem;
+            color: azure;
+        }
+        .i:hover{
+            transform: perspective(1000px) translateZ(20px);
+            transition-duration: 1s;
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="head">Birla Mandir</div>
+        <div class="cont">
+            <img src="	https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/56/ff/7a/photo0jpg.jpg?w=600&h=400&s=1" alt="i" class="i"/>
+            <div class="ides">Apart from the main shrine, the consorts of Lord Venkateswara, Padmavati and Andal are housed in separate shrines. The temple also has separate shrines for various Deva and Devi, including Shiva, Shakti, Ganesh, Hanuman, Brahma, Saraswati and Lakshmi. Selected teachings of men and Gurbani are engraved on temple walls. Birla temples are open to all, as identified by Mahatma Gandhi and other Hindu leaders.</div>
+        </div>
+    </div>
+</body>
+</html>

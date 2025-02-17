@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            align-items: center;
+            background-color: #1f263b;
+        }
+        .head{
+            padding-top: 2rem;
+            font-size: 2rem;
+            color: blue;
+        }
+        .cont{
+            padding-top: 2rem;
+            width: 100vw;
+            min-height: 50%;
+            display: flex;
+            gap: 2rem;
+            justify-content: space-around;
+        }
+        .i{
+            display: block;
+            border-radius: 6px;
+            height: 100%;
+            width: 50%;
+            padding: 1rem;
+            animation-name: slide;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes slide {
+            0%{
+              translate: -8rem 0px;
+            }
+            100%{
+                translate: 0px 0px;
+            }
+        }
+        .ides{
+            padding: 1rem;
+            font-size: 1.2rem;
+            color: azure;
+        }
+        .i:hover{
+            transform: perspective(1000px) translateZ(20px);
+            transition-duration: 1s;
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="head">Golkonda Fort</div>
+        <div class="cont">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/ph…o-o/05/a3/62/98/golkonda-fort.jpg?w=900&h=500&s=1" alt="i" class="i">
+            <div class="ides">Golconda is a fortified citadel and ruined city located on the western outskirts of Hyderabad, Telangana, India.[1][2] The fort was originally built by Kakatiya ruler Pratāparudra in the 11th century out of mud walls.[3] It was ceded to the Bahmani Kings from Musunuri Nayakas during the reign of the Bahmani Sultan Mohammed Shah I, during the first Bahmani-Vijayanagar War. Following the death of Sultan Mahmood Shah, the Sultanate disintegrated and Sultan Quli, who had been appointed as the Governor of Hyderabad by the Bahmani Kings, fortified the city and made it the capital of the Golconda Sultanate. Because of the vicinity of diamond mines, especially Kollur Mine, Golconda flourished as a trade centre of large diamonds known as Golconda Diamonds. Golconda fort is currently abandoned and in ruins. The complex was put by UNESCO on its "tentative list" to become a World Heritage Site in 2014, with other forts in the region, under the name Monuments and Forts of the Deccan Sultanate (despite there being a number of different sultanates)</div>
+        </div>
+    </div>
+</body>
+</html>

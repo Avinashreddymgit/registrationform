@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100vh;
+            width: 100vw;
+            background-color: azure;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    .f{
+            height: 100vh;
+            width: auto;
+            background-color: azure;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            border: 1px solid black;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem;
+    }
+        .welsign{
+            font-size: 2rem;
+            color: rgb(133, 4, 238);
+            padding: 3rem;
+        }
+        .box1{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .b1,.b2,.b4{
+            display: flex;
+            gap: 1rem;
+        }
+        .box2{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .s{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .submit{
+            border: 1px solid black;
+            padding: 5px;
+            width: 4rem;
+            border-radius: 3px;
+        }
+        .submit:hover{
+           background-color: red;
+           transition-duration: 1s;
+           color: azure;
+        }
+        .in,.head1,.head2,.sc,.g{
+            font-size: 1.2rem;
+        }
+        .bbb{
+            display: flex;
+        }
+        input:hover{
+            border: 1px solid aqua;
+            transition-duration: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form class="f">
+            <div class="welsign">Welcome To Our Hotel</div>
+            <div class="box1">
+                <div class="head1">Fill Personal Details:</div>
+                <div class="b1">
+                    <div class="b11">
+                        <label for="i1" class="in">First Name: </label><input type="text" id="i1">
+                    </div>
+                    <div class="b12">
+                        <label for="i2" class="in">last Name: </label><input type="text" id="i2">
+                    </div>
+                </div>
+                <div class="b2">
+                    <label for="i3" class="in">contact: </label><input type="text" id="i3">
+                    <label for="i4" class="in">Email: </label><input type="email" id="i4">
+                </div>
+                <div class="b3">
+                    <label for="i5" class="in">Age: </label><input type="number" id="i1">
+                </div>
+                <div class="b4">
+                    <div class="g">Gender:</div>
+                    <label for="i6"  class="in">Male:</label><input type="radio" name="i"id="i6">
+                    <label for="i6" class="in">Female:</label><input type="radio" name="i"id="i6">
+                    <label for="i6"  class="in">Other:</label><input type="radio"name="i" id="i6">
+                </div>
+            </div>
+            <div class="box2">
+                <div class="head2">Booking Details:</div>
+                <div class="bbb"><label for="i7" class="in">start: </label><input type="date" id="i7"></div>
+                <div class="bbb"><label for="i8" class="in">end: </label><input type="date" id="i8"></div>
+                <div class="bbb">
+                    <div class="sc">Type of Room:</div>
+                <select id="i9" name="room">
+                    <option value="" selected disabled>Select a room</option>
+                    <option value="premium">Premium</option>
+                    <option value="normal">Normal</option>
+                    <option value="luxury">luxury</option>
+                </select>
+                </div>
+                <div class="s"><input type="submit" value="Submit" class="submit"></div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

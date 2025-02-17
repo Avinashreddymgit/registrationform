@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            align-items: center;
+            background-color: #1f263b;
+        }
+        .head{
+            padding-top: 2rem;
+            font-size: 2rem;
+            color: blue;
+        }
+        .cont{
+            padding-top: 2rem;
+            width: 100vw;
+            min-height: 50%;
+            display: flex;
+            gap: 2rem;
+            justify-content: space-around;
+        }
+        .i{
+            display: block;
+            border-radius: 6px;
+            height: 100%;
+            width: 50%;
+            padding: 1rem;
+            animation-name: slide;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes slide {
+            0%{
+              translate: -8rem 0px;
+            }
+            100%{
+                translate: 0px 0px;
+            }
+        }
+        .ides{
+            padding: 1rem;
+            font-size: 1.2rem;
+            color: azure;
+        }
+        .i:hover{
+            transform: perspective(1000px) translateZ(20px);
+            transition-duration: 1s;
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="head">Charminar</div>
+        <div class="cont">
+            <img src="https://static.toiimg.com/photo/69144907.cms" alt="i" class="i">
+            <div class="ides">The Archaeological Survey of India (ASI), the current caretaker of the structure, mentions in its records, "There are various theories regarding the purpose for which Charminar was constructed. However, it is widely accepted that Charminar was built at the centre of the city, to commemorate the eradication of plague", a deadly disease which was widespread at that time.[8][9] According to Jean de Thévenot, a French traveller of the 17th century whose narration was complemented with the available Persian texts, the Charminar was constructed in the year 1591 CE, to commemorate the beginning of the second Islamic millennium year (1000 AH). The event was celebrated far and wide in the Islamic world, thus Qutb Shah founded the city of Hyderabad to celebrate the event and commemorate it with the construction of this building.[10][11]: 17-19</div>
+        </div>
+    </div>
+</body>
+</html>

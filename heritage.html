@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 100vw;
+            min-height: 100vh;
+            background-color: #1f263b;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .headcon{
+            font-size: 2rem;
+            color: azure;
+            padding: 2rem;
+        }
+        .gridbox{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 2rem;
+            padding: 1rem;
+        }
+        .ibox{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 1rem;
+            text-decoration: none;
+            border: 5px solid azure;
+            border-radius: 10px;
+        }
+        .i{
+            width: 100%;
+            height: 75%;
+            border-radius: 6px;
+        }
+        .ic{
+            font-size: 1.2rem;
+            color: azure;
+            padding-left: 20rem;
+        }
+        .ibox:hover .ic{
+            color: blue;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+        .ibox:hover .i{
+            transform: scale(1.1);
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="headcon">Popular Destinations</div>
+        <div class="gridbox">
+            <a href="#" class="ibox">
+                <img src="https://static.toiimg.com/photo/69144907.cms" alt="i" class="i">
+                <div class="ic">Charminar</div>
+            </a>
+            <a href="#" class="ibox">
+                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0a/d9/1f/ee.jpg" alt="i" class="i">
+                <div class="ic">Ramoji film city</div>
+            </a>
+            <a href="#" class="ibox">
+                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/74/b8/d4.jpg" alt="i" class="i">
+                <div class="ic">Falaknuma Palace</div>
+            </a>
+            <a href="#" class="ibox">
+                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/70/95/27.jpg" alt="i" class="i">
+                <div class="ic">Srisailam Temple</div>
+            </a>
+            <a href="#" class="ibox">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/ph…o-o/05/a3/62/98/golkonda-fort.jpg?w=900&h=500&s=1" alt="i" class="i">
+                <div class="ic">Golkonda Fort</div>
+            </a>
+            <a href="#" class="ibox">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/56/ff/7a/photo0jpg.jpg?w=600&h=400&s=1" alt="i" class="i">
+                <div class="ic">Birla Mandir</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

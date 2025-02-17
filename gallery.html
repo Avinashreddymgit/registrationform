@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            min-height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            gap:3rem;
+            background-color: #1f263b;;
+        }
+        .headc{
+            font-size: 2rem;
+            padding: 1rem;
+            color: azure;
+            text-align: center;
+        }
+        .gridbox{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .img{
+            border-radius: 6px;
+            width: 100%;
+            height: 100%;
+        }
+        .img:hover{
+            transform: scale(1.2);
+            transition-duration: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="headc">Gallery Of Famous Places</div>
+        <div class="gridbox">
+            <div class="i"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/98/f7/df/charminar.jpg?w=600&h=500&s=1" alt="i" class="img"></div>
+            <div class="i"><img src="https://www.ushadestinations.com/wp-content/uploads/2024/03/Tourist-Places-to-Visit-in-Hyderabad.jpg" alt="i" class="img"></div>
+           <div class="i"> <img src="https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/02/Hussain-Sagar-lake.jpg" alt="i" class="img"></div>
+            <div class="i"><img src="https://cms.tgtdc.in/fetch?payload=ec8aa477-6b48-4064-9b72-2699add03583.jpg" alt="i" class="img"></div>
+            <div class="i"><img src="https://d2jdgazzki9vjm.cloudfront.net/tourist-places/images/tourist-places-in-hyderabad2.png" alt="i" class="img"></div>
+            <div class="i"><img src="https://c.myholidays.com/blog/2023/11/71720_Qutub%20Shahi%20Tombs.webp" alt="i" class="img"></div>
+            <div class="i"><img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/74/b8/d4.jpg" alt="i" class="img"></div>
+            <div class="i"><img src="https://images.wanderon.in/blogs/new/2024/07/hyderabad.jpg" alt="i" class="img"></div>
+        </div>
+    </div>
+</body>
+</html>

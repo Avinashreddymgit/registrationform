@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            align-items: center;
+            background-color: #1f263b;
+        }
+        .head{
+            padding-top: 2rem;
+            font-size: 2rem;
+            color: blue;
+        }
+        .cont{
+            padding-top: 2rem;
+            width: 100vw;
+            min-height: 50%;
+            display: flex;
+            gap: 2rem;
+            justify-content: space-around;
+        }
+        .i{
+            display: block;
+            border-radius: 6px;
+            height: 100%;
+            width: 50%;
+            padding: 1rem;
+            animation-name: slide;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes slide {
+            0%{
+              translate: -8rem 0px;
+            }
+            100%{
+                translate: 0px 0px;
+            }
+        }
+        .ides{
+            padding: 1rem;
+            font-size: 1.2rem;
+            color: azure;
+        }
+        .i:hover{
+            transform: perspective(1000px) translateZ(20px);
+            transition-duration: 1s;
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="head">Srisailam Temple</div>
+        <div class="cont">
+            <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/70/95/27.jpg" alt="i" class="i">
+            <div class="ides">Srisailam is a census town in Nandyal district of the Indian state of Andhra Pradesh.[3] It is the mandal headquarters of Srisailam mandal in Atmakur revenue division.[4] It is located about 160 kilometres (99 mi) from the district headquarters Nandyal, 180 kilometres (112 mi) from Kurnool, and it is located about 264 kilometres (164 mi) from Vijayawada. The town is famous for the Mallikarjuna Jyotirlinga Temple and is one of the holy pilgrimage sites for the Shaivism and Shaktism sects of Hinduism. The town is classified as both a Jyotirlinga and a Shakta pitha.[5]
+
+                As of 2001 census of India,[6] Srisailam had a population of 23,257. Males constituted 54% of the population and females 46%. Srisailam Project (RFC) Township has an average literacy rate of 75.62% higher than the state average of 67.02%. Male literacy is around 85.68% while female literacy rate is 63.24%. 13% of the population is under 6 years of age.</div>
+        </div>
+    </div>
+</body>
+</html>

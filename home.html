@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .head{
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            background-color:azure;
+        }
+        .box2{
+         display: flex;
+         border: 1px solid black;
+         border-radius: 5px;
+         justify-content: space-around;
+         align-items: center;
+         height: 50%;
+         width: 70%;
+         box-shadow: 4px 4px 5px 2px rgb(66, 66, 66);
+        }
+        .g{
+            text-decoration: none;
+            font-size: 2rem;
+            background-color: blue;
+            color: azure;
+            padding: 0.5rem;
+            border: 1px solid rgb(97, 96, 96);
+            border-radius: 6px;
+            margin-top: 2rem;
+        }
+        .box2 :hover{
+            opacity: 0.5;
+            transition-duration: 2s;
+            transform: rotateY(30deg);
+
+        }
+        .box3{
+            background-color: rgb(92, 92, 235);
+            height: 200px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid blac;
+        }
+        .insta{
+            width: 4rem;
+            height: 4rem;
+            border-radius: 2rem;
+            position: relative;
+            animation-name: bounce;
+            animation-duration: 4s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+        }
+      /*  @keyframes bounce {
+            from {
+    transform: translateY(-50%);
+  }
+
+  to {
+    transform: translateY(50%);
+  }
+}*/
+  
+     @keyframes bounce {
+            0%{
+              transform: translateX(-50%);
+            }
+            25%{
+                transform: translateY(-50%);
+            }
+            50%{
+                transform: translateX(50%);
+            }
+            75%{
+                transform: translateY(50%);
+            }
+            100%{
+                transform: translateX(-50%);
+            }
+}
+  
+        .twit{
+            width: 4rem;
+            height: 4rem;
+            border-radius: 2rem;
+            position: relative;
+            animation-name: bounc;
+            animation-duration: 2s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: both;
+        }
+        @keyframes bounc {
+            from {
+    transform: translateY(-50%);
+  }
+
+  to {
+    transform: translateY(50%);
+  }
+        }
+        .insta:hover{
+            rotate: 45deg;
+            transition-duration: 2s;
+        }
+        .twit:hover{
+            rotate: 45deg;
+            transform: scale(1.2);
+            transition-duration: 1s;
+        }
+        .box4{
+            background-color:  rgb(92, 92, 235);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            height: 300px;
+            width: 100%;
+        }
+        .heading{
+            text-align: center;
+            font-size: 3rem;
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="box1">
+            <p class="g">Tourism Website</p>
+        </div>
+        <hr>
+        <div class="box2">
+            <a href="#" class="g">Home</a>
+            <a href="#" class="g">Heritage</a>
+            <a href="http://127.0.0.1:5500/Assignment%204_files/1ab5_1/hotel.html" class="g">Hotel Booking</a>
+            <a href="#" class="g">Gallery</a>
+        </div>
+        <div class="box4">
+            <p class="heading">Our social media links:</p>
+        <div class="box3">
+             <img src="insta.jpeg" alt="f" class="insta">
+             <img src="twit.jpeg" alt="g" class="twit">
+             </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
