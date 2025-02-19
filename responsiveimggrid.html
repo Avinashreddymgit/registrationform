@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            --main-bg-color: brown;
+        }
+        :root {
+            --main-bg-color: brown;
+         }
+        .container{
+            width: 100vw;
+            min-height: 100vh;
+            background-color: var(--main-bg-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .main{
+            display: grid;
+            grid-template-rows: 200px 200px 200px;
+            grid-template-columns: repeat(2,1fr);
+            gap: 1rem;
+            padding: 2rem;
+        }
+        .heading{
+            font-size: 3rem;
+            position: sticky;
+        
+        }
+        .head{
+            font-size: 3rem;
+            position: sticky;
+            top: 20px;
+            left:100px;
+        }
+        .img{
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+        }
+        .img:hover{
+            transform: scale(1.2);
+            transition-duration: 2s;
+        }
+        #img1{
+            border-radius: 50%;
+        }
+        #img2{
+            filter: contrast(2);
+        }
+        #img3{
+            width: 20px;
+            height: 20px;
+           -webkit-mask-image: url('https://www.w3schools.com/css/w3logo.png');
+            mask-image: url('https://www.w3schools.com/css/w3logo.png');
+            mask-repeat: no-repeat;
+            mask-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <p class="heading">Popular places</p>
+        </div>
+        <div class="main">
+            <img src="https://static.toiimg.com/photo/69144907.cms" alt="1" id="img1" class="img">
+            <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/74/b8/d4.jpg" alt="2" id="img2" class="img">
+            <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0a/d9/1f/ee.jpg" alt="3" id="img3" class="img">
+            <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/70/95/27.jpg" alt="4"id="img4" class="img">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/ph…o-o/05/a3/62/98/golkonda-fort.jpg?w=900&h=500&s=1" alt="5" id="img5" class="img">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/56/ff/7a/photo0jpg.jpg?w=600&h=400&s=1" alt="6" id="img6" class="img">
+        </div>
+    </div>
+    
+</body>
+</html>
