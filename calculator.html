@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .space{
+            display:flex;
+            width: 100vw;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .calc{
+             width:30%;
+             height: 90vh;
+             border: 1rem solid rgb(59, 141, 103);
+             border-radius: 8px;
+             background-color: rgb(78, 78, 78);
+             display: flex;
+             flex-direction: column;
+             box-shadow: 2px 2px 1px 4px rgb(64, 63, 63);
+        }
+        .display{
+            max-width: 98%;
+            margin: 1rem;
+            background-color: rgb(133, 127, 127);
+            border-radius: 4px;
+            min-height: 4rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            color: azure;
+        }
+        .pad{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            min-width: 98%;
+            min-height: 58%;
+            padding-top: 5rem;
+        }
+        .footer{
+            min-height: 18%;
+            display: flex;
+            justify-content: space-around;
+        }
+        .num{
+            height: 4rem;
+            width:4rem;
+            border: 1px solid black;
+            border-radius: 4px;
+            background-color: rgb(34, 33, 33);
+            color: azure;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .d{
+            color: azure;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+        .equal{
+            border: 1px solid black;
+            border-radius: 4px;
+            background-color: rgb(231, 143, 11);
+            width: 4rem;
+            height: 4rem;
+            margin-left: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .e{
+            color: azure;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .box1{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 2rem;
+        }
+        .num:hover{
+            background: azure;
+            transition-duration: 1s;
+            transition-timing-function: linear;
+        }
+        .num:hover .d{
+            color: black;
+            transition-duration: 0.5s;
+            transition-timing-function: linear;
+        }
+        .equal:hover{
+            background: azure;
+            transition-duration: 0.5s;
+            transition-timing-function: linear;
+        }
+        .equal:hover .e{
+            color: black;
+            transition-duration: 0.5s;
+            transition-timing-function: linear;
+        }
+        .output{
+            padding-left: 0.5rem;
+            font-size: 1.6rem;
+            color: azure;
+        }
+        .f{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .ui{
+            font-size: 1.4rem;
+        }
+        #s{
+            width: 4rem;
+        }
+        .n{
+            display: flex;
+            gap: 3.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="space">
+    <div class="calc">
+        <div class="display">
+          <p class="output"></p>
+        </div>
+        <div class="pad">
+            <div class="box1">
+        <div class="num"><p class="d">1</p></div>
+        <div class="num"><p class="d">2</p></div>
+        <div class="num"><p class="d">3</p></div>
+        <div class="num"><p class="d">+</p></div>
+        </div>
+        <div class="box1">
+        <div class="num"><p class="d">4</p></div>
+        <div class="num"><p class="d">5</p></div>
+        <div class="num"><p class="d">6</p></div>
+        <div class="num"><p class="d">-</p></div>
+        </div>
+        <div class="box1">
+        <div class="num"><p class="d">7</p></div>
+        <div class="num"><p class="d">8</p></div>
+        <div class="num"><p class="d">9</p></div>
+        <div class="num"><p class="d">/</p></div>
+        </div>
+        </div>
+        <div class="footer">
+        <div class="equal"><p class="e">=</p></div>
+        <div class="num"><p class="d">DEL</p></div>
+        <div class="num"><p class="d">AC</p></div>
+        <div class="num"><p class="d">*</p></div>
+        </div>
+    </div>
+      <h2>For buying subscription fill details:</h2>
+        <form class="f">
+            <div class="n">
+            <label for="name" class="ui">Name:</label>
+            <input type="text" id="name" class="in">
+            </div>
+            <div class="nt">
+                <label for="number" class="ui">Contact No.</label>
+                <input type="number" id="number">
+            </div>
+            <input type="submit" id="s">
+        </form>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
