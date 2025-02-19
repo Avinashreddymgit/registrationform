@@ -46,14 +46,14 @@ function cal(){
 }
 t.addEventListener('click',cal);
 document.querySelector(".f").addEventListener("submit", function (event) {
-    let name = document.getElementById("name").value.trim();
-    let number = document.getElementById("number").value.trim();
-    if (name === "") {
+    let name=document.getElementById("name").value.trim();
+    let number=document.getElementById("number").value.trim();
+    if (name==="") {
         alert("Please enter your name.");
         event.preventDefault();
         return;
     }
-    if (number.length !== 10 || isNaN(number)) {
+    if (number.length!==10||isNaN(number)) {
         alert("Please enter a valid 10-digit phone number.");
         event.preventDefault();
         return;
