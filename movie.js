@@ -1,6 +1,13 @@
 let moviename=document.querySelector('.movie');
 let array=[];
 let count=0;
+function clearall(){
+    count=0;
+    array=[];
+    moviename.value="";
+}
+let clea=document.querySelector('.c');
+clea.addEventListener('click',clearall);
 function addmovie(){
     let name=moviename.value;
     if(name===""){
