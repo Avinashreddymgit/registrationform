@@ -84,3 +84,11 @@ input{
     border-radius: 5px;
 }
 
+#v2{
+    width: 30%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
