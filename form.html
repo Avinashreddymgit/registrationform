@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="title">Visa Application Form</h1>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="http://127.0.0.1:5500/my%20assignment/aplication.html">Visa Check (JS)</a></li>
+            <li><a href="http://127.0.0.1:5500/my%20assignment/form.html">Visa Application (PHP)</a></li>
+            <li><a href="http://127.0.0.1:5500/my%20assignment/system.html">Form For Visa Application</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="form-container">
+            <form id="applicationForm" action="reg_form.php" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter full name" required>
+                <p id="n" class="error-msg"></p>
+
+                <label for="passport">Passport Number:</label>
+                <input type="text" id="passport" name="passport" maxlength="10" placeholder="8-10 characters" required>
+                <p id="pass" class="error-msg"></p>
+
+                <label for="v2">Select Your Country:</label>
+                <select id="v2" name="country">
+                    <option value="NA">-- Select a Country --</option>
+                    <option value="U">USA</option>
+                    <option value="C">Canada</option>
+                    <option value="I">India</option>
+                    <option value="UK">UK</option>
+                    <option value="AUS">Australia</option>
+                </select>
+                <p id="nat" class="error-msg"></p>
+
+                <button type="submit">Apply for Visa</button>
+            </form>
+            <h2 id="msg" class="message-box"></h2>
+        </section>
+    </main>
+</body>
+</html>

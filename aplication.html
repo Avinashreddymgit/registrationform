@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Requirement Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Visa Requirement Checker</h1>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="http://127.0.0.1:5500/my%20assignment/aplication.html">Visa Check (JS)</a></li>
+            <li><a href="http://127.0.0.1:5500/my%20assignment/form.html">Visa Application (PHP)</a></li>
+            <li><a href="http://127.0.0.1:5500/my%20assignment/system.html">Form For Visa Application</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="form-container">
+            <form id="visaForm">
+                <label for="country">Select Your Country:</label>
+                <select id="v" name="country">
+                    <option value="NA">-- Select a Country --</option>
+                    <option value="U">USA</option>
+                    <option value="C">Canada</option>
+                    <option value="I">India</option>
+                    <option value="UK">UK</option>
+                    <option value="AUS">Australia</option>
+                </select>
+                <button type="submit">Check Visa</button>
+            </form>
+            <h2 id="msg" class="message-box"></h2>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

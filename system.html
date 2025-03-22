@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Visa Application</title>
+   <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="heading">
+      <h1 class="title">Visa Application Form</h1>
+    </div>
+    <nav class="navigation">
+        <ul>
+            <li><a href="http://127.0.0.1:5500/my%20assignment/aplication.html">Visa Check (JS)</a></li>
+            <li><a href="http://127.0.0.1:5500/my%20assignment/form.html">Visa Application (PHP)</a></li>
+            <li><a href="http://127.0.0.1:5500/my%20assignment/system.html">Form For Visa Application</a></li>
+        </ul>
+    </nav>
+    <div class="form2">
+      <form onsubmit="return validateform()">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter full name">
+        <p id="n"></p>
+        <label for="passport">Passport Number:</label>
+        <input type="text" name="passport" id="passport" maxlength="10" placeholder="Enter valid passport number size(8-10)">
+        <p id="pass"></p>
+        <label for="country">Select Your Country:</label>
+        <select id="v2" name="country">
+          <option value="NA">--Select---</option>
+          <option value="U">USA</option>
+          <option value="C">Canada</option>
+          <option value="I">India</option>
+          <option value="UK">UK</option>
+          <option value="AUS">Australia</option>
+        </select>
+        <p id="nat"></p>
+        <input type="submit" value="Apply for Visa">
+      </form>
+    </div>
+    <div>
+      <h1 id="msg"></h1>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
