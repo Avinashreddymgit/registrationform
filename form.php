@@ -1,19 +1,32 @@
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = trim($_POST["name"] ?? "");
-    $passport = trim($_POST["passport"] ?? "");
-    $country = $_POST["country"] ?? "";
-    
-    if (empty($name) || empty($passport) || empty($country)) {
-        echo "<p class='error-msg'>All fields are required!</p>";
-        exit;
-    }
-    
-    if (strlen($passport) < 8 || strlen($passport) > 10) {
-        echo "<p class='error-msg'>Invalid passport number! Must be 8-10 characters.</p>";
-        exit;
-    }
-    
-    echo "<p class='success-msg'>Visa application submitted successfully!</p>";
-}
-?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Reg_Form </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <?php
+         if($_SERVER["REQUEST_METHOD"]=="GET"){
+            $choice = $_GET['v']??('N/A');
+            if($choice=='N/A'){
+                echo "<h1><strong>Please select a country.</strong></h1>";
+            }
+            else if($choice=='U'){
+                echo "<h1><strong>Visa required for most applicants.</strong></h1>";
+            }
+            else if($choice=='C'){
+                echo "<h1><strong>Visa required unless you have an eTA.</strong></h1>";
+            }
+            else if($choice=="I"){
+                echo "<h1><strong>Visa required before travel.</strong></h1>";
+            }
+            else if($choice=="UK"){
+                echo "<h1><strong>Visa depends on the duration of stay</strong></h1>";
+            }
+            else if($choice=="AUS"){
+                echo "<h1><strong>Visa depends on the duration of stay.</strong></h1>";
+            }
+         }
+        ?>
+    </body>
+</html>
